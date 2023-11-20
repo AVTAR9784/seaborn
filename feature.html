@@ -143,48 +143,18 @@
                 
                 <h2 class="mb-5">Find Collage</h2>
                 <p class="">Reach out to us and let us know if there is anything we can do for you</p>
-                <form action="/app/cms/api/v1/schemas/41ad6d80-6c12-11ee-b892-8dc5b97501db/entries" method="post">
-                    <div class="row g-3">
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                                <label for="name">Your Name</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                                <label for="email">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 100px" required></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <fieldset class="multiple">
-                                <legend>SB.MCS <span class="w-label--required">*</span></legend>
-                                <div class="multiple-group__option">
-                                    <label>
-                                        <input type="radio" name="consultType" value="Consult for HM collages (Rs.1500)">
-                                        Consult for HM collages (Rs.1500)
-                                    </label>
-                                </div>
-                                <div class="multiple-group__option">
-                                    <label>
-                                        <input type="radio" name="consultType" value="Consult for HM courses (Rs.900)">
-                                        Consult for HM courses (Rs.900)
-                                    </label>
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div class="col-12">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                        </div>
-                    </div>
-                </form>
+                <form name="college_admission" method="post" data-netlify="true" class="contact-form form-validate" novalidate="novalidate">
+                    <form name="contact" netlify>
+                        <p>
+                          <label>Name <input type="text" name="name" /></label>
+                        </p>
+                        <p>
+                          <label>Email <input type="email" name="email" /></label>
+                        </p>
+                        <p>
+                          <button type="submit">Send</button>
+                        </p>
+                      </form>
                 
       
             </div>
