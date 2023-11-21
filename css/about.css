@@ -85,4 +85,16 @@ main {
       padding-right: 0px;
     }
   }
+  @media (max-width: 468px) {
+    h1,h2,h3{
+      font-size: 16px !important;
+    }
+    .copyright {
+      font-size: 10px;
+      color: white;
+      margin-top: -60px;
   
+    }.footer{
+      margin-bottom: -80px;
+    }
+    }
