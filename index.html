@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Oceanic Consultancy Services</title>
+    <title>Maritime Consultancy Services</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Manning Operations,
     Maritime Career Consultancy,
@@ -175,7 +175,7 @@
                         </div>
                         <h4 class="mb-3">MARITIME CAREER CONSULTANCY</h4>
                         <p>Merchant Navy offers a variety of avenues as in career choices.</p>
-                        <a class="btn-slide mt-2" href="./about.html"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
+                        <a class="btn-slide mt-2" id="cust_btn"><i class="fa fa-arrow-right"></i><span>Read More</span></a>
                     </div>
                 </div>
                 
@@ -324,7 +324,65 @@
         </div>
     </div>
     <!-- Footer End -->
+ 
+    <div class="container">
+        <h2>Modal Example</h2>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+      <button id="cust_btn" type="button"  class="btn btn-info btn-lg">Click func</button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content col-8">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">Appoinment Booking</h4>
+              </div>
+              <div class="modal-body">
+                <form name="appoinment_booking"  data-netlify="true" class="contact-form form-validate" novalidate="novalidate">
+                    <div class="row g-3">
+                        <div class="col-12  ">
+                            <input type="text" class="form-control border-0" name="name" placeholder="Your Name" style="height: 55px;">
+                        </div>
+                    
+                        <div class="col-12 ">
+                            <input type="email" class="form-control border-0" name="email" placeholder="Your Email" style="height: 55px;">
+                        </div>
+                        <div class="col-12 ">
+                            <input type="text" class="form-control border-0" name="Mobile" placeholder="Your Mobile" style="height: 55px;">
+                        </div>
 
+                        <div class="col-12 ">
+                            <select class="form-select  border-0" name="service_request" style="height: 55px;">
+                                <option selected>what service are you  Requesting ?</option>
+                                <option value="Passenger_cruise (fee 900)">Passenger cruise (fee 900)</option>
+                                <option value="Cruise_Careeers (fee 850)">Cruise Careeers (fee 850)</option>
+                                <option value="STCW_Courses (fee 650)">STCW Courses  (fee 650)</option>
+                                <option value="Hiring_Agencies (fee 900)">Hiring Agencies (fee 900)</option>
+                                <option value="DGS_Medical (fee 600)">DGS - Medical (fee 600)</option>
+                                <option value="Seaman_Book (fee 600)">Seaman Book CDEC  (fee 600)</option>
+                                <option value="Marlins_Test (fee 499)">Marlins Test   (fee 499)</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      </div>
+       
 
     <!-- Back to Top -->
 
