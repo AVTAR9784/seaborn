@@ -130,9 +130,12 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="bg-light text-center p-5 wow fadeIn" data-wow-delay="0.5s">
+                         <!-- Error message display area -->
+    <div class="error-message" style="color: red; margin-top: 10px; text-align: center;"></div>
                         <form name="appoinment_booking"  data-netlify="true" class="contact-form form-validate" novalidate="novalidate">
+                          
                             <div class="row g-3">
-                                <div class="col-12  col-sm-6">
+                                <div class="col-12  ">
                                     <input type="text" class="form-control border-0" name="name" required  placeholder="Your Name *" style="height: 55px;">
                                 </div>
                                 <div class="form-floating">
@@ -146,7 +149,7 @@
                                     <input type="text" class="form-control border-0" name="Mobile" required placeholder="Your Mobile * " style="height: 55px;">
                                 </div>
 
-                                <div class="col-12 col-sm-6">
+                                <div class="col-12 ">
                                     <select class="form-select  border-0" name="service_request" style="height: 55px;">
                                         <option selected>what service are you  Requesting ?</option>
                                         <option value="Passenger_cruise (fee 900)">Passenger cruise (fee 900)</option>
@@ -215,6 +218,8 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
+        <script src="./js/form.js"></script>
+    
     <!--End of Tawk.to Script-->
 </body>
 

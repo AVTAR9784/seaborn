@@ -97,8 +97,11 @@
                 <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
                     <h6 class="text-secondary text-uppercase">Get In Touch</h6>
                     <h1 class="mb-4">Contact For Any Query</h1>
+                       <!-- Error message display area -->
+    <div class="error-message" style="color: red; margin-top: 10px; text-align: center;"></div>
                     <div class="bg-light p-4">
-                        <form  name="contact_page"  data-netlify="true" class="contact-form form-validate" novalidate="novalidate">
+                        <form name="contact_page" data-netlify="true" class="contact-form form-validate" novalidate="novalidate">
+                         
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
@@ -113,17 +116,17 @@
                                     </div>
                                 </div>
                                 <div class="col-12 ">
-                                    <input type="text" class="form-control border-0 " name="mobile_no." placeholder="Your Mobile *" style="height: 55px;" required>
+                                    <input type="text" class="form-control border-0" name="mobile_no" placeholder="Your Mobile *" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject " >
-                                        <label for="subject">Subject </label>
+                                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea name="message" class="form-control"  required placeholder="Leave a message here *" id="message" style="height: 100px"></textarea>
+                                        <textarea name="message" class="form-control" required placeholder="Leave a message here *" id="message" style="height: 100px"></textarea>
                                         <label for="message">Message *</label>
                                     </div>
                                 </div>
@@ -181,6 +184,7 @@
     s0.parentNode.insertBefore(s1,s0);
     })();
     </script>
+    <script src="./js/form.js"></script>
     <!--End of Tawk.to Script-->
 </body>
 
